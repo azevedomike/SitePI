@@ -1,0 +1,146 @@
+ *{margin:0}
+.div_menu {
+    background-color: rgb(180, 160, 152);
+    border: 30px solid rgb(180, 160, 152);
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: -10px;
+    display: flex;
+}
+.logo{
+    height: 15vh;
+    margin-left: 35px;
+}
+.menu{
+    position: relative;
+    text-align: right;
+    width: 155vh;
+    margin-top:10px;
+    font-size: 17px;
+}
+div nav a{
+    margin: 0px 5px 0px 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    text-decoration: none;
+    color:rgb(109, 50, 50);
+}
+
+.formulario {
+    background-color: rgb(110, 42, 16);
+    border: 30px solid rgb(110, 42, 16);
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: -10px;
+    display: flex;
+}
+
+.corpo_form {
+    width: 25vw;
+    height:20vw;
+    margin-left: 30vw
+}
+
+.corpo{
+    background-color: brown
+}
+
+.toyota {
+    margin-left: 15vw;
+}
+
+.hb20 {
+    margin-left: 15vw;
+}
+
+.news_1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 50px;
+    border: 2px solid black;
+}
+.news_2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 50px;
+    border: 2px solid black;
+}
+}
+footer{/*somente para a pagina Inicio*/
+    width: 98.79vw;
+}
+footer {
+    margin-right: -8px;
+    margin-left: -8px;
+    bottom: -10px;
+    position: relative;
+    width:  100vw;
+    text-align: center;
+    background-color:coral; 
+    display: flex;
+}
+.rodape_left{
+    text-align: left;
+    margin: 20px 0px 10px 30px;
+
+}
+.logo_rodape{
+    width: 20vw;
+    margin: 10px 10px 0px 30px;
+}
+
+.txt_left{
+    color:rgb(255, 255, 255);
+    text-align: justify;
+    text-indent:3em;
+    line-height: 5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 20vw;
+    font-size: 15px;
+}
+
+.rodape_center{
+    text-align: center;
+    width: 25vw;
+    padding-left: 50px;
+    margin-left: 70px;
+}
+
+.menu_rodape{
+    text-align: justify;
+    margin: 70px 0px 10px 0px;
+
+}
+.menu_rodape a:hover{
+    color:rgb(252, 98, 26);
+    
+}
+
+.rodape_right{
+    text-align: center;
+    width: 17vw;
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.rodape_endereco{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+.endereco{
+    line-height: 4vh;
+    text-align: justify;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 16px;
+}
+.rodape_right p{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify; 
+}
