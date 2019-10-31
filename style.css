@@ -32,10 +32,11 @@ body, .corpo{
 }
 
 .formulario {
-    background-color: rgb(110, 42, 16);
-    border: 30px solid rgb(110, 42, 16);
-    width: 100%;
-    display: flex;
+    background-color: rgb(230, 0, 0);
+    border: 0px solid rgb(230, 0, 0);
+    width: 30%;
+    margin:0 auto;
+    margin-bottom: 118.1px;
 }
 
 .corpo_form {
