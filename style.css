@@ -46,7 +46,7 @@ body, .corpo{
 }
 
 
-.toyota, .hb20 {
+.toyota, .hb20,.jetta {
     padding-left: 9px;
     margin-top: 10px;
     height: 33vh;
@@ -65,7 +65,11 @@ h3{
     padding: 0 20px;
     padding-top: 30px;
 }
-.news_1,.news_2{
+.news_3{
+    padding: 0 20px;
+    padding-top: 30px;
+}
+.news_1,.news_2,.news_3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-indent:1.5em;
     line-height: 3.5vh;
@@ -76,6 +80,12 @@ h3{
     text-align: justify;
     padding-bottom: 30px;
 }
+
+.login{
+    background-color: white;
+}
+
+
 
 footer {
     position: relative;
