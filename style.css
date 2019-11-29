@@ -1,10 +1,10 @@
 *{margin:0}
 body, .corpo{
-    background-color: rgb(230, 0, 0); 
+    background-color: rgba(230, 21, 0, 0.92); 
 }
 
 .div_menu {
-    background-color: rgb(230, 0, 0);
+    background-color: rgba(230, 0, 0, 0.66);
     padding: 30px 0px;
     margin-top: -10px;
     width: 100%;
@@ -81,9 +81,6 @@ h3{
     padding-bottom: 30px;
 }
 
-.login{
-    background-color: white;
-}
 
 
 

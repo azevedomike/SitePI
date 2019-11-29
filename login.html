@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cadastro_style.css">
+    <link rel="stylesheet" href="login_style.css">
+    <title>Login</title>
 </head>
-
 <body>
     <div class="div_menu">
         <a href="index.html"><img class="logo" src="carro-ideal.png" alt="car&cia"></a>
@@ -19,26 +17,22 @@
         </nav>
     </div>
     <div class="formulario">
-
+      
+            
             <form role="form">
-                <div class="div_cadastro">
-                   <div class="cadastro_logo"></div>
 
-                <p>Nome completo</p>
-                <input type="text" id="u_nome">
-                
+                <div class="div_login">
+                <div class="cadastro_logo"></div>
                 <p>Email</p>
                 <input type="email" id="email">
 
                 <p>Senha</p>
                 <input type="password" id="senha">
 
-                <p>Confirme a senha</p>
-                <input type="password" id="c_senha">
-                  <br>
-                <button onclick="cadastrar()">Cadastrar</button>
+                <button onclick="entrar()">Entrar</button>
                 </div>
             </form>
+    
     </div>
     <footer>
         <div class="rodape_left">
@@ -60,5 +54,4 @@
         </div>
     </footer>
 </body>
-
 </html>
