@@ -1,0 +1,9 @@
+{
+  "name": "carro-ideal-root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./projeto-site/bin/www",
+	"postinstall": "cd projeto-site && npm install"
+  }
+}
