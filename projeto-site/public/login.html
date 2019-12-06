@@ -19,17 +19,17 @@
     <div class="formulario">
       
             
-            <form role="form">
+            <form role="form" id="form_login" method="post" onsubmit="return entrar()">
 
                 <div class="div_login">
                 <div class="cadastro_logo"></div>
                 <p>Email</p>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email">
 
                 <p>Senha</p>
-                <input type="password" id="senha">
+                <input type="password" id="senha" name="senha">
 
-                <button onclick="entrar()">Entrar</button>
+                <button id = "btn_entrar" onclick="entrar()">Entrar</button>
                 </div>
             </form>
     
@@ -55,3 +55,47 @@
     </footer>
 </body>
 </html>
+<script>
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    
+                    window.location.href = 'index.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+                    finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        // img_aguarde.style.display = 'block';
+        // div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        // img_aguarde.style.display= 'none';
+        // div_erro.style.display = 'block';
+        // div_erro.innerHTML = resposta;
+    }
+
+</script>

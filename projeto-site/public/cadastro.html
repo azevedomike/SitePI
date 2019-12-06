@@ -20,23 +20,23 @@
     </div>
     <div class="formulario">
 
-            <form role="form">
+            <form role="form" id="form_cadastro" method="post" onsubmit="return cadastrar()">
                 <div class="div_cadastro">
                    <div class="cadastro_logo"></div>
 
                 <p>Nome completo</p>
-                <input type="text" id="u_nome">
+                <input type="text" id="u_nome" name="nome">
                 
                 <p>Email</p>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email">
 
                 <p>Senha</p>
-                <input type="password" id="senha">
+                <input type="password" id="senha" name="senha">
 
                 <p>Confirme a senha</p>
                 <input type="password" id="c_senha">
                   <br>
-                <button onclick="cadastrar()">Cadastrar</button>
+                <button onclick="cadastrar()" id="btn_entrar">Cadastrar</button>
                 </div>
             </form>
     </div>
@@ -62,3 +62,41 @@
 </body>
 
 </html>
+
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        // img_aguarde.style.display='block';
+        // div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        // img_aguarde.style.display='none';
+        // div_erro.style.display='block';
+    }
+
+</script>
